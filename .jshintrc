@@ -1,0 +1,19 @@
+{
+    "bitwise": true,
+    "curly": true,
+    "eqeqeq": true,
+    // "freeze": true,
+    "immed": true,
+    "indent": 4,
+    "latedef": true,
+    "newcap": true,
+    "noarg": true,
+    "noempty": true,
+    "nonbsp": true,
+    "nonew": true,
+    "supernew": true,
+    "quotmark": "single",
+    "undef": true,
+    "unused": true,
+    "evil": true
+}

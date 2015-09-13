@@ -1,0 +1,62 @@
+$break-mobile: 768px;
+$break-tablet: 992px;
+$break-computer: 1400px;
+$break-hd: 1920px;
+
+@mixin media($media) {
+    @if $media == mobile {
+        @media only screen and (max-width: $break-mobile) {
+            @content;
+        }
+    }
+    @else if $media == tablet {
+        @media only screen and (min-width: $break-mobile + 1) and (max-width: $break-tablet) {
+            @content;
+        }
+    }
+    @else if $media == _tablet {
+        @media only screen and (max-width: $break-tablet) {
+            @content;
+        }
+    }
+    @else if $media == tablet_ {
+        @media only screen and (min-width: $break-mobile + 1) {
+            @content;
+        }
+    }
+    @else if $media == computer {
+        @media only screen and (min-width: $break-tablet + 1) and (max-width: $break-computer) {
+            @content;
+        }
+    }
+    @else if $media == _computer {
+        @media only screen and (max-width: $break-computer) {
+            @content;
+        }
+    }
+    @else if $media == computer_ {
+        @media only screen and (min-width: $break-tablet + 1) {
+            @content;
+        }
+    }
+    @else if $media == large-screen {
+        @media only screen and (min-width: $break-computer + 1) and (max-width: $break-hd) {
+            @content;
+        }
+    }
+    @else if $media == _large-screen {
+        @media only screen and (max-width: $break-hd) {
+            @content;
+        }
+    }
+    @else if $media == large-screen_ {
+        @media only screen and (min-width: $break-computer + 1) {
+            @content;
+        }
+    }
+    @else if $media == wide-screen {
+        @media only screen and (min-width: $break-hd + 1) {
+            @content;
+        }
+    }
+}

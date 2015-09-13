@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background-color: #141414;
+    color: #b9baa6; 
+    font: 400 12px Lato, sans-serif;
+}
+
+body {
+    @extend html;
+    
+    min-width: 320px;
+}
+
+h2, h3, figcaption {
+    margin-bottom: 2em;
+    font-size: 1.5em;
+    color: #fefefe;
+    
+    span {
+        font-weight: 300;
+    }
+}
+
+button {
+    padding: 1em 2.5em;
+    font-size: 1.125em;
+    color: #fefefe;
+    border: .1em solid #45463e;
+    background: none;
+    transition: all .3s;
+    
+    &:hover {
+        color: #141414;
+        background: #45463e;
+    }
+}
+
+.hidden {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+[data-sr] {
+    visibility: hidden;
+}
+
+.mosaicflow__column {
+    float: left;
+}
+.mosaicflow__item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
