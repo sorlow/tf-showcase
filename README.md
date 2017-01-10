@@ -1,3 +1,3 @@
 # Tomek Foltman Portfolio
 
-http://tomekfoltman.com/showcase
+http://tomekfoltman.com
